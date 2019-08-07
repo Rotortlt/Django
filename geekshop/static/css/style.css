@@ -1,0 +1,314 @@
+@font-face {
+
+    src: url('fonts/brokgauzefron.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/brokgauzefron.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('fonts/brokgauzefron.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/brokgauzefron.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/brokgauzefron.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/brokgauzefron.svg#brokgauzefron') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.header {
+    height: 120px;
+    background-color: beige;
+}
+
+.content {
+    display: block;
+}
+
+.logo {
+    outline: 1px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 25px;
+    float: left;
+    display: block;
+}
+
+
+.text_header {
+    width: 260px;
+    padding-top: 18px;
+    text-align: center;
+    color: brown;
+    font-size: 24px;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.menu li {
+    margin-top: 38px;
+    width: 250px;
+    height: 40px;
+    font-family: 'BrokgauzEfron';
+    list-style-type: none;
+    border: 1px solid;
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: antiquewhite;
+    display: inline-block;
+    float: right;
+
+}
+
+.footer {
+    text-align: right;
+    font-size: 20px;
+    color: brown;
+    background-color: antiquewhite;
+    height: 120px;
+    padding-right: 60px;
+    padding-top: 15px;
+    margin-top: 20px;
+    clear: both;
+
+
+}
+
+
+.menu li:first-child {
+    margin-right: 40px;
+}
+
+img {
+    outline: 2px solid #0085cc;
+}
+
+img:hover {
+    outline: none;
+}
+
+.menu li a:hover {
+    color: crimson;
+}
+
+.menu li a:active {
+    color: darkcyan;
+}
+
+.main_img {
+    outline: 4px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    display: inline;
+}
+
+.main_header {
+    overflow: hidden;
+    font-family: serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 10px;
+
+}
+
+.text {
+    color: #484343;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 24px;
+    text-align: justify;
+    overflow: hidden;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-bottom: 20px;
+
+
+}
+
+.img_goods {
+    margin-top: 20px;
+    width: 380px;
+
+    float: left;
+
+}
+
+.goods1 {
+    margin-top: 10px;
+    margin-left: 2px;
+    display: inline-block;
+    float: left;
+    
+    overflow: hidden;
+}
+
+.goods2 {
+    
+    margin-top: 10px;
+    padding-left: 2px;
+    display: block;
+    overflow: hidden;
+}
+
+.goods3 {
+    margin-left: 2px;
+    display: inline-block;
+    float: left;
+    
+    overflow: hidden;
+}
+
+.goods4 {
+    padding-left: 2px;
+    display: block;
+    overflow: hidden;
+    
+}
+
+.card_goods {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.img_goods {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.link_to_product {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.text_description_goods {
+    margin-top: 20px;
+    padding-top: 4px;
+
+}
+
+
+.text_short_description::first-letter {
+    font-size: 30px;
+    color: brown
+}
+
+.text_full_description::first-letter {
+    font-size: 30px;
+    color: brown
+}
+
+.header1 {
+    font-family: serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.header2 {
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.button {
+    clear: both;
+    width: 200px;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+.text_short_description {
+    color: #707070;
+    font-size: 16px;
+
+    font-style: italic;
+    line-height: 16px;
+    font-weight: 400px;
+    text-align: left 20px;
+    padding-left: 30px;
+
+}
+
+.text_full_description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    text-align: left 20px;
+    list-style-type: none;
+    padding-left: 30px;
+
+}
+
+.catalog {
+    width: 50%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.table {
+    padding-top: 30px;
+    width: 1200px;
+
+}
+
+.teh_characteristiks {
+    width: 800px;
+    border: 1px solid;
+
+}
+
+.1_row_TC {
+    height: 100px;
+}
+
+.teh_characteristiks td {
+    height: 30px;
+    border: 1px solid;
+}
+
+.name_value_characteristics {
+    font-size: 16px;
+    padding-left: 40px;
+    font-weight: 200px;
+
+}
+
+.name_of_characteristics {
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 300px;
+
+}
+
+.value_characteristics {
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 200px;
+
+}
