@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'mainapp/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Студия Дизайна Черешня</title>
-   <link rel="stylesheet" href="/static/css/style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="header">
-            <img class="logo" !important src="/static/img/cherry.png" alt="logo">
-            <ul class="menu">
-                <li><a href="/contacts">Контакты</a></li>
-                <li><a href="/catalog">Каталог товаров</a></li>
-                <li><a href="/">Главная</a></li>
-            </ul>
-            <h1 class="text_header">Студия дизайна Черешня <br> 8 800 200 45 45</h1>
-
-
-        </div>
-        <div class="content">
-
-            <div class="main_header">
+{% block content %}
+    <div class="main_header">
                 Хранитель Сережек
             </div>
             <div class="img_goods">
@@ -138,14 +117,5 @@
                     </tr>
                 </table>
             </div>
-        </div>
 
-
-
-
-
-        <div class="footer">
-            Все права защищены &copy; Viktor Sotnikov
-        </div>
-    </div>
-</body></html>
+{% endblock %}

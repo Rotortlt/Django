@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
 def main(request):
-    return render(request, "mainapp/index.html")
+    contents = {"username": 'stive'}
+    return render(request, "mainapp/index.html", contents)
 
 def catalog(request):
     return render(request, "mainapp/Catalog.html")

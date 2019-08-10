@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'mainapp/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Студия Дизайна Черешня</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="header">
-            <img class="logo" !important src="/static/img/cherry.png" alt="logo">
-            <ul class="menu">
-                <li><a href="/contacts">Контакты</a></li>
-                <li><a href="/catalog">Каталог товаров</a></li>
-                <li><a href="/">Главная</a></li>
-            </ul>
-            <div class="text_header">Студия Дизайна <br>Черешня <br> 8 800 200 45 45</div>
-        </div>
-
-        <div class="content">
-            <div class="main_header">
+{% block content %}
+    <div class="main_header">
                 Шкатулки с дизайнирской отделкой
-            </div>
-            <div class="img_goods">
-                <div class="goods1">
+    </div>
+    <div class="img_goods">
+        <div class="goods1">
                     <a href="/static/img/Box3.jpeg" target="_blank"><img src="/static/img/Box3.jpeg" title="Шкатулки" width="180" height="150" alt="Boxes"></a>
-                </div>
+        </div>
                 <div class="goods2">
                     <a href="/static/img/Box4.jpeg" target="_blank"><img src="/static/img/Box4.jpeg" title="Шкатулки" width="180" height="150" alt="Boxes"></a>
                 </div>
@@ -137,11 +118,8 @@
                     </tr>
                 </table>
             </div>
-        </div>
 
-        <div class="footer">
-            Все права защищены &copy; Viktor Sotnikov
-        </div>
+{% endblock %}
 
-    </div>
-</body></html>
+
+

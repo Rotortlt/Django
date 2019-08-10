@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'mainapp/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Студия Дизайна Черешня</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-
-</head>
-
-<body>
-    <div class="container">
-        <div class="header">
-            <img class="logo" !important src="/static/img/cherry.png" alt="logo">
-            <ul class="menu">
-                <li><a href="/contacts">Контакты</a></li>
-                <li><a href="/catalog">Каталог товаров</a></li>
-                <li><a href="/">Главная</a></li>
-            </ul>
-            <div class="text_header">Студия Дизайна <br>Черешня <br> 8 800 200 45 45</div>
-        </div>
-        <div class="content">
-            <div class="main_img">
+{% block content %}
+     <div class="main_img">
                 <img src="/static/img/works1.png" height="300px" alt="Черешня">
             </div>
             <div class="main_header">
@@ -31,12 +12,5 @@
                     Стильные аксессуары ручной работы и другие наши работы можно посмотреть тут: <a href="https://www.instagram.com/vs.cherry_md/">Instagram</a>
                 </p>
             </div>
-        </div>
-        <div class="footer">
-            Все права защищены &copy; Viktor Sotnikov
-        </div>
+{% endblock %}
 
-    </div>
-
-
-</body></html>
