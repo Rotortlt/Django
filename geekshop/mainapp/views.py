@@ -1,18 +1,21 @@
 from django.shortcuts import render
-import datetime
+from .models import Product
 
 def main(request):
     contents = {"username": 'stive'}
     return render(request, "mainapp/index.html", contents)
 
 def catalog(request):
-    return render(request, "mainapp/Catalog.html")
+    contents = {'products': Product.objects.all()}
+    return render(request, "mainapp/Catalog.html", contents)
 
 def boxes(request):
-    return render(request, "mainapp/Boxes.html")
+    content = {'products': Product.objects.all()}
+    return render(request, "mainapp/Boxes.html", content)
 
 def hanger(request):
-    return render(request, "mainapp/Hanger.html")
+    content = {'products': Product.objects.all()}
+    return render(request, "mainapp/Hanger.html", content)
 
 def contacts(request):
     return render(request, "mainapp/Contact.html")

@@ -4,24 +4,19 @@
     <div class="main_header">
                 Товары Дизайн студии Черешня!
     </div>
-    <div class="card_goods">
-        <div class="img_goods">
-            <a href="/catalog/boxes"><img src="/static/img/Box4.jpeg" title="Designer boxes" width="200" height="180"></a>
-        </div>
+    {% for product in products %}
+        <div class="card_goods">
+            <div class="img_goods">
+                <a href="#"><img src=" {% media {{ product.image }}  title={{ product.short_desc }} width="200" height="180"></a>
+            </div>
         <div class="link_to_product">
-            <a href="/catalog/boxes"><h3>
-                    Шкатулки
+            <a href="#"><h3>
+                    {{ product.name }}
                 </h3> </a>
         </div>
     </div>
-    <div class="card_goods">
-        <div class="img_goods">
-            <a href="/catalog/hanger"><img src="/static/img/Hanger4.jpeg" title="Hanger for Accessories" width="200" height="180"></a>
-        </div>
-        <div class="link_to_product">
-            <a href="/catalog/hanger"><h3>
-                    Держатели сережек
-            </h3></a>
-        </div>
-    </div>
+
+    {% endfor %}
+
+
 {% endblock %}
