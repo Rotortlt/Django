@@ -7,7 +7,7 @@
     {% for product in products %}
         <div class="card_goods">
             <div class="img_goods">
-                <a href="#"><img src='{{ product.image }}'  title='{{ product.short_desc }}' width="200" height="180"></a>
+                <a href="#"><img src='{{ product.image.url }}'  title='{{ product.short_desc }}' width="200" height="180"></a>
             </div>
         <div class="link_to_product">
             <a href="#"><h3>
